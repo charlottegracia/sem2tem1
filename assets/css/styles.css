@@ -85,9 +85,9 @@ nav li {
     padding: 20px 19vw;
 }
 
-.landingpageNav {
+/* .landingpageNav {
     display: none;
-}
+} */
 
 .activePage {
     background-color: #224430;
@@ -101,9 +101,9 @@ nav li {
     display: none;
 }
 
-.startside {
+/* .startside {
     display: none;
-}
+} */
 
 .ruteNav {
     display: block;
@@ -144,3 +144,6 @@ nav li {
     "img1 img2 img3 img4";
 }
 
+.rute {
+    display: none;
+}
