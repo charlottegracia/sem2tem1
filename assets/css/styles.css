@@ -119,22 +119,28 @@ nav li {
     padding: 20px;
 }
 
+.ruteText p {
+    font-size: 20px;
+    padding-bottom: 80px;
+}
+
 .img1 {grid-area: img1};
 .img2 {grid-area: img2};
 .img3 {grid-area: img3};
 .img4 {grid-area: img4};
 
-.ruteGalleri {
-    display: grid;
-    grid-template-columns: 200px 200px;
-    grid-template-rows: 200px 200px;
-    grid-template-areas: 
-    "img1 img2"
-    "img3 img4";
+.ruteGalleri img {
+    object-fit: contain;
+    height: 100%;
+    width: 100%;
 }
 
-.ruteGalleri img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
+.ruteGalleri {
+    display: grid;
+    grid-gap: 10px;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 200px;
+    grid-template-areas: 
+    "img1 img2 img3 img4";
 }
+
