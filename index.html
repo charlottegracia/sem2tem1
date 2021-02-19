@@ -6,12 +6,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="assets/css/styles.css">
     <script src="assets/js/index.js" defer></script> 
+    <script src="https://kit.fontawesome.com/4d151777d8.js" crossorigin="anonymous"></script>
     <title>Aalborg Kommune: Park & Natur</title>
 </head>
 <body>
     <header>
-        <p id="pil" onclick="tilbageTilStartside()"><--</p>
+        <i id="pil" onclick="tilbageTilStartside()" class="fas fa-chevron-left ikon"></i>
         <img class="logo" src="assets/images/aalborgkommunelogo.png" alt="aalborg kommune logo">
+        <img class="engelsk" onclick="skiftSprog()" src="assets/images/COLOURBOX8608852.jpg" alt="english flag">
     </header>
     <div id="startside">
         <section id="vandretur">
@@ -19,53 +21,53 @@
                 <div class="circle"></div>
                 <section class="vandre" onclick="mulbjergInfo()">
                     <h1>Mulbjerge</h1>
-                    <h2>10km - something something</h2>
+                    <h2><i class="fas fa-map-pin lokationIkon"></i>32km fra din lokation</h2>
                     <div class="landingpageImg">
                         <img src="assets/images/Mulbjerge-05.jpg" alt="Mulbjerge">
                     </div>
-                    <p>10km something something something something something </p>
                 </section>
                 <div class="circle"></div>
                 <section class="vandre" onclick="poulstrupInfo()">
                     <h1>Poulstrup Sø</h1>
-                    <h2>10km - something something</h2>
+                    <h2><i class="fas fa-map-pin lokationIkon"></i>7.6km fra din lokation</h2>
                     <div class="landingpageImg">
                         <img src="assets/images/PoulstrupS›OgDallHede-01.jpg" alt="Poulstrup sø">
                     </div>
-                    <p>10km something something something something something </p>
                 </section>
                 <div class="circle"></div>
                 <section class="vandre" onclick="egholmInfo()">
                     <h1>Egholm</h1>
-                    <h2>10km - something something</h2>
+                    <h2><i class="fas fa-map-pin lokationIkon"></i>7.1km fra din lokation</h2>
                     <div class="landingpageImg">
                         <img src="assets/images/Egholm-07.jpg" alt="Egholm">
                     </div>
-                    <p>10km something something something something something </p>
                 </section>
                 <div class="circle"></div>
                 <section class="vandre" onclick="oesteraadalenNordInfo()">
                     <h1>Østerådalen Nord</h1>
-                    <h2>10km - something something</h2>
+                    <h2><i class="fas fa-map-pin lokationIkon"></i>2.9km fra din lokation</h2>
                     <div class="landingpageImg">
                         <img src="assets/images/sterdalenNord-11.jpg" alt="Østerådalen nord">
                     </div>
-                    <p>10km something something something something something </p>
                 </section>
                 <div class="circle"></div>
                 <section class="vandre" onclick="oesteraadalenSydInfo()">
                     <h1>Østerådalen Syd</h1>
-                    <h2>10km - something something</h2>
+                    <h2><i class="fas fa-map-pin lokationIkon"></i>3.3km fra din lokation</h2>
                     <div class="landingpageImg">
                         <img src="assets/images/sterdalenSyd-12.jpg" alt="Østerådalen syd">
                     </div>
-                    <p>10km something something something something something </p>
                 </section>
+                <div class="sidsteOmraade"></div>
             </section>
             <nav>
                 <ul>
-                    <li class="activePage">vandre</li>
-                    <li onclick="showCykeltur()">cykel</li>
+                    <li class="activePage">
+                        <i class="fas fa-walking ikon"></i>
+                    </li>
+                    <li onclick="showCykeltur()">
+                        <i class="fas fa-bicycle ikon"></i>
+                    </li>
                 </ul>
             </nav>
         </section>
@@ -74,17 +76,99 @@
                 <div class="circle"></div>
                 <section class="vandre" onclick="bjergbanestienInfo()">
                     <h1>Bjergbanestien</h1>
-                    <h2>10km - something something</h2>
+                    <h2><i class="fas fa-map-pin lokationIkon"></i>11.4km fra din lokation</h2>
                     <div class="landingpageImg">
                         <img src="assets/images/Bjergbanestigen-02.jpg" alt="Bjergbanestien">
                     </div>
-                    <p>10km something something something something something </p>
                 </section>
             </section>
             <nav>
                 <ul>
-                    <li onclick="showVandretur()">vandre</li>
-                    <li class="activePage">cykel</li>
+                    <li onclick="showVandretur()">
+                        <i class="fas fa-walking ikon"></i>
+                    </li>
+                    <li class="activePage">
+                        <i class="fas fa-bicycle ikon"></i>
+                    </li>
+                </ul>
+            </nav>
+        </section>
+    </div>
+    <div id="engelskStartside">
+        <section id="vandretur">
+            <section class="tur">
+                <div class="circle"></div>
+                <section class="vandre" onclick="mulbjergInfo()">
+                    <h1>Mulbjerge</h1>
+                    <h2><i class="fas fa-map-pin lokationIkon"></i>32km from your location</h2>
+                    <div class="landingpageImg">
+                        <img src="assets/images/Mulbjerge-05.jpg" alt="Mulbjerge">
+                    </div>
+                </section>
+                <div class="circle"></div>
+                <section class="vandre" onclick="poulstrupInfo()">
+                    <h1>Poulstrup Lake</h1>
+                    <h2><i class="fas fa-map-pin lokationIkon"></i>7.6km from your location</h2>
+                    <div class="landingpageImg">
+                        <img src="assets/images/PoulstrupS›OgDallHede-01.jpg" alt="Poulstrup sø">
+                    </div>
+                </section>
+                <div class="circle"></div>
+                <section class="vandre" onclick="egholmInfo()">
+                    <h1>Egholm</h1>
+                    <h2><i class="fas fa-map-pin lokationIkon"></i>7.1km from your location</h2>
+                    <div class="landingpageImg">
+                        <img src="assets/images/Egholm-07.jpg" alt="Egholm">
+                    </div>
+                </section>
+                <div class="circle"></div>
+                <section class="vandre" onclick="oesteraadalenNordInfo()">
+                    <h1>Østerådalen North</h1>
+                    <h2><i class="fas fa-map-pin lokationIkon"></i>2.9km from your location</h2>
+                    <div class="landingpageImg">
+                        <img src="assets/images/sterdalenNord-11.jpg" alt="Østerådalen nord">
+                    </div>
+                </section>
+                <div class="circle"></div>
+                <section class="vandre" onclick="oesteraadalenSydInfo()">
+                    <h1>Østerådalen South</h1>
+                    <h2><i class="fas fa-map-pin lokationIkon"></i>3.3km from your location</h2>
+                    <div class="landingpageImg">
+                        <img src="assets/images/sterdalenSyd-12.jpg" alt="Østerådalen syd">
+                    </div>
+                </section>
+                <div class="sidsteOmraade"></div>
+            </section>
+            <nav>
+                <ul>
+                    <li class="activePage">
+                        <i class="fas fa-walking ikon"></i>
+                    </li>
+                    <li onclick="showCykeltur()">
+                        <i class="fas fa-bicycle ikon"></i>
+                    </li>
+                </ul>
+            </nav>
+        </section>
+        <section id="cykeltur">
+            <section class="tur">
+                <div class="circle"></div>
+                <section class="vandre" onclick="bjergbanestienInfo()">
+                    <h1>Bjergbanestien</h1>
+                    <h2><i class="fas fa-map-pin lokationIkon"></i>11.4km from your location</h2>
+                    <div class="landingpageImg">
+                        <img src="assets/images/Bjergbanestigen-02.jpg" alt="Bjergbanestien">
+                    </div>
+                </section>
+            </section>
+            <nav>
+                <ul>
+                    <li onclick="showVandretur()">
+                        <i class="fas fa-walking ikon"></i>
+                    </li>
+                    <li class="activePage">
+                        <i class="fas fa-bicycle ikon"></i>
+                    </li>
                 </ul>
             </nav>
         </section>
@@ -96,7 +180,7 @@
             </div>
             <section class="ruteText">
                 <h1>Mulbjerge</h1>
-                <h4>10km fra din lokation</h4>
+                <h4><i class="fas fa-map-pin lokationIkon"></i>32km fra din lokation</h4>
                 <p class="intro">
                     Vidste du, at Mulbjerge engang var en ø langt ude i Kattegat?
                     At området i dag byder på sjældne planter - og mange
@@ -134,8 +218,12 @@
         </section>
         <nav>
             <ul>
-                <li class="activePage">info</li>
-                <li>kort</li>
+                <li class="activePage">
+                    <i class="fas fa-info-circle ikon"></i>
+                </li>
+                <li>
+                    <i class="fas fa-map-marked-alt ikon"></i>
+                </li>
             </ul>
         </nav>
     </div>
@@ -146,7 +234,7 @@
             </div>
             <section class="ruteText">
                 <h1>Poulstrup Sø og Dall Hede</h1>
-                <h4>4km fra din lokation</h4>
+                <h4><i class="fas fa-map-pin lokationIkon"></i>7.6km fra din lokation</h4>
                 <p class="intro">
                     Beliggende blot 12 km syd for Aalborg er naturområdet omkring
                     Poulstrup Sø et ideelt udflugtsmål. Området kan nås fra øst via
@@ -188,8 +276,12 @@
         </section>
         <nav>
             <ul>
-                <li class="activePage">info</li>
-                <li>kort</li>
+                <li class="activePage">
+                    <i class="fas fa-info-circle ikon"></i>
+                </li>
+                <li>
+                    <i class="fas fa-map-marked-alt ikon"></i>
+                </li>
             </ul>
         </nav>
     </div>
@@ -200,7 +292,7 @@
             </div>
             <section class="ruteText">
                 <h1>Egholm</h1>
-                <h4>12km fra din lokation</h4>
+                <h4><i class="fas fa-map-pin lokationIkon"></i>7.1km fra din lokation</h4>
                 <p class="intro">
                     
                     <br> <br>
@@ -224,8 +316,12 @@
         </section>
         <nav>
             <ul>
-                <li class="activePage">info</li>
-                <li>kort</li>
+                <li class="activePage">
+                    <i class="fas fa-info-circle ikon"></i>
+                </li>
+                <li>
+                    <i class="fas fa-map-marked-alt ikon"></i>
+                </li>
             </ul>
         </nav>
     </div>
@@ -236,7 +332,7 @@
             </div>
             <section class="ruteText">
                 <h1>Østerådalen Nord</h1>
-                <h4>5km fra din lokation</h4>
+                <h4><i class="fas fa-map-pin lokationIkon"></i>2.9km fra din lokation</h4>
                 <p class="intro">
                     
                     <br> <br>
@@ -260,8 +356,12 @@
         </section>
         <nav>
             <ul>
-                <li class="activePage">info</li>
-                <li>kort</li>
+                <li class="activePage">
+                    <i class="fas fa-info-circle ikon"></i>
+                </li>
+                <li>
+                    <i class="fas fa-map-marked-alt ikon"></i>
+                </li>
             </ul>
         </nav>
     </div>
@@ -272,7 +372,7 @@
             </div>
             <section class="ruteText">
                 <h1>Østerådalen Syd</h1>
-                <h4>7km fra din lokation</h4>
+                <h4><i class="fas fa-map-pin lokationIkon"></i>3.3km fra din lokation</h4>
                 <p class="intro">
                     
                     <br> <br>
@@ -296,8 +396,12 @@
         </section>
         <nav>
             <ul>
-                <li class="activePage">info</li>
-                <li>kort</li>
+                <li class="activePage">
+                    <i class="fas fa-info-circle ikon"></i>
+                </li>
+                <li>
+                    <i class="fas fa-map-marked-alt ikon"></i>
+                </li>
             </ul>
         </nav>
     </div>
@@ -307,8 +411,8 @@
                 <img src="assets/images/Mulbjerge-03.jpg" alt="bjergbanestien">
             </div>
             <section class="ruteText">
-                <h1>Poulstrup sø</h1>
-                <h4>4km fra din lokation</h4>
+                <h1>Bjergbanestien</h1>
+                <h4><i class="fas fa-map-pin lokationIkon"></i>11.4km fra din lokation</h4>
                 <p class="intro">
                     
                     <br> <br>
@@ -332,8 +436,12 @@
         </section>
         <nav>
             <ul>
-                <li class="activePage">info</li>
-                <li>kort</li>
+                <li class="activePage">
+                    <i class="fas fa-info-circle ikon"></i>
+                </li>
+                <li>
+                    <i class="fas fa-map-marked-alt ikon"></i>
+                </li>
             </ul>
         </nav>
     </div>

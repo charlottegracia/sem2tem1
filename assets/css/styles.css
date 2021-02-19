@@ -3,9 +3,9 @@ body {
     font-family: Arial, Helvetica, sans-serif;
 }
 
-.logo {grid-area: logo;}
-#pil {grid-area: pil;}
-
+.logo       {grid-area: logo;}
+#pil        {grid-area: pil;}
+.engelsk    {grid-area: flag}
 
 header {
     background-color: #224430;
@@ -15,17 +15,30 @@ header {
     grid-template-columns: 25% 50% 25%;
     grid-template-rows: 40px;
     grid-template-areas:
-    "pil logo .";
+    "pil logo flag";
 }
 
-header p {
-    color: #BEE7E2;
+.engelsk {
+    object-fit: cover;
+    height: 60%;
+    width: 40%;
+    margin: auto 0 auto 40px;
+}
+
+header i {
+    text-align: left;
+    padding: 8px;
 }
 
 .logo {
     height: 100%;
     width: auto;
     margin: auto;
+}
+
+.ikon {
+    font-size: 25px;
+    color: #BEE7E2;
 }
 
 .landingpageImg img {
@@ -66,11 +79,22 @@ h1 {
 }
 
 h2 {
-    font-size: 15px;
+    font-size: 16px;
+    color: #224430;
+    font-style: italic;
+}
+
+.lokationIkon {
+    padding-right: 7px;
+    font-size: 18px;
 }
 
 p {
     margin-bottom: 0;
+}
+
+.sidsteOmraade {
+    padding-bottom: 50px;
 }
 
 nav {
@@ -89,20 +113,12 @@ nav ul {
 nav li {
     text-align: center;
     display: inline-block;
-    padding: 20px 0;
+    padding: 15px 0;
     width: 49%;
 }
 
 .activePage {
     background-color: #224430;
-}
-
-#vandretur {
-    display: block;
-}
-
-#cykeltur {
-    display: none;
 }
 
 .rute img {
@@ -170,10 +186,10 @@ nav li {
     "img3 img4";
 }
 
-.rute {
-    display: none;
-}
-
+#engelskStartside   {display: none;}
+#vandretur          {display: block;}
+#cykeltur           {display: none;}
+.rute               {display: none;}
 #mulbjerge          {display: none;}
 #poulstrup          {display: none;}
 #egholm             {display: none;}
