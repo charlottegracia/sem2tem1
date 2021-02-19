@@ -3,22 +3,29 @@ body {
     font-family: Arial, Helvetica, sans-serif;
 }
 
+.logo {grid-area: logo;}
+#pil {grid-area: pil;}
+
+
 header {
     background-color: #224430;
     text-align: center;
     padding: 10px;
+    display: grid;
+    grid-template-columns: 25% 50% 25%;
+    grid-template-rows: 40px;
+    grid-template-areas:
+    "pil logo .";
 }
 
 header p {
     color: #BEE7E2;
-    float: left;
 }
 
-header 
-
 .logo {
-    height: 35%;
-    width: 35%;
+    height: 100%;
+    width: auto;
+    margin: auto;
 }
 
 .landingpageImg img {
@@ -27,17 +34,6 @@ header
     object-fit: cover;
     border-radius: 8px;
 }
-
-/* .landingpageImg {
-    background-repeat: no-repeat;
-    background-size: contain;
-    width: 200px;
-    height: 200px;
-}
-
-.mulbjergeImg {
-    background-image: url("../images/Mulbjerge-05.jpg");
-} */
 
 .tur {
     margin: 20px;
@@ -51,6 +47,16 @@ header
     border-left: 2px solid #224430;
     padding: 0 20px;
     margin: 0;
+    z-index: 0;
+}
+
+.circle {
+    background-color: #BEE7E2;
+    height: 23px;
+    width: 23px;
+    border-radius: 50%;
+    margin: 20px 0 -50px -10px;
+    z-index: 1;
 }
 
 h1 {
@@ -81,13 +87,11 @@ nav ul {
 }
 
 nav li {
+    text-align: center;
     display: inline-block;
-    padding: 20px 19vw;
+    padding: 20px 0;
+    width: 49%;
 }
-
-/* .landingpageNav {
-    display: none;
-} */
 
 .activePage {
     background-color: #224430;
@@ -101,14 +105,6 @@ nav li {
     display: none;
 }
 
-/* .startside {
-    display: none;
-} */
-
-.ruteNav {
-    display: block;
-}
-
 .rute img {
     width: 100%;
     height: 200px;
@@ -119,9 +115,29 @@ nav li {
     padding: 20px;
 }
 
+.ruteText h1 {
+    font-size: 25px;
+}
+
+.ruteText h4 {
+    color: #224430;
+    font-style: italic;
+}
+
 .ruteText p {
-    font-size: 20px;
-    padding-bottom: 80px;
+    width: 97%;
+    hyphens: auto;
+    font-size: 18px;
+    padding-bottom: 15px;
+    line-height: 1.6;
+}
+
+.intro {
+    font-style: italic;
+}
+
+.fedSkrift {
+    font-weight: bold;
 }
 
 .img1 {grid-area: img1};
@@ -130,20 +146,38 @@ nav li {
 .img4 {grid-area: img4};
 
 .ruteGalleri img {
-    object-fit: contain;
+    object-fit: cover;
     height: 100%;
     width: 100%;
 }
 
-.ruteGalleri {
+.ruteGalleri1 {
     display: grid;
     grid-gap: 10px;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
-    grid-template-rows: 200px;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr;
     grid-template-areas: 
-    "img1 img2 img3 img4";
+    "img1 img2";
+}
+
+.ruteGalleri2 {
+    padding-bottom: 60px;
+    display: grid;
+    grid-gap: 10px;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr;
+    grid-template-areas: 
+    "img3 img4";
 }
 
 .rute {
     display: none;
 }
+
+#mulbjerge          {display: none;}
+#poulstrup          {display: none;}
+#egholm             {display: none;}
+#oesteraadalenNord  {display: none;}
+#oesteraadalenSyd   {display: none;}
+#bjergbanestien     {display: none;}
+#pil                {display: none;}

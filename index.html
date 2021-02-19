@@ -10,13 +10,14 @@
 </head>
 <body>
     <header>
-        <!--  <p><--</p> -->
+        <p id="pil" onclick="tilbageTilStartside()"><--</p>
         <img class="logo" src="assets/images/aalborgkommunelogo.png" alt="aalborg kommune logo">
     </header>
-    <div class="startside">
+    <div id="startside">
         <section id="vandretur">
             <section class="tur">
-                <section class="vandre">
+                <div class="circle"></div>
+                <section class="vandre" onclick="mulbjergInfo()">
                     <h1>Mulbjerge</h1>
                     <h2>10km - something something</h2>
                     <div class="landingpageImg">
@@ -24,23 +25,26 @@
                     </div>
                     <p>10km something something something something something </p>
                 </section>
-                <section class="vandre">
+                <div class="circle"></div>
+                <section class="vandre" onclick="poulstrupInfo()">
                     <h1>Poulstrup Sø</h1>
                     <h2>10km - something something</h2>
                     <div class="landingpageImg">
-                        <img src="assets/images/PoulstrupS›OgDallHede-02.jpg" alt="Poulstrup sø">
+                        <img src="assets/images/PoulstrupS›OgDallHede-01.jpg" alt="Poulstrup sø">
                     </div>
                     <p>10km something something something something something </p>
                 </section>
-                <section class="vandre">
+                <div class="circle"></div>
+                <section class="vandre" onclick="egholmInfo()">
                     <h1>Egholm</h1>
                     <h2>10km - something something</h2>
                     <div class="landingpageImg">
-                        <img src="assets/images/Egholm-05.jpg" alt="Egholm">
+                        <img src="assets/images/Egholm-07.jpg" alt="Egholm">
                     </div>
                     <p>10km something something something something something </p>
                 </section>
-                <section class="vandre">
+                <div class="circle"></div>
+                <section class="vandre" onclick="oesteraadalenNordInfo()">
                     <h1>Østerådalen Nord</h1>
                     <h2>10km - something something</h2>
                     <div class="landingpageImg">
@@ -48,7 +52,8 @@
                     </div>
                     <p>10km something something something something something </p>
                 </section>
-                <section class="vandre">
+                <div class="circle"></div>
+                <section class="vandre" onclick="oesteraadalenSydInfo()">
                     <h1>Østerådalen Syd</h1>
                     <h2>10km - something something</h2>
                     <div class="landingpageImg">
@@ -57,7 +62,7 @@
                     <p>10km something something something something something </p>
                 </section>
             </section>
-            <nav class="landingpageNav">
+            <nav>
                 <ul>
                     <li class="activePage">vandre</li>
                     <li onclick="showCykeltur()">cykel</li>
@@ -66,7 +71,8 @@
         </section>
         <section id="cykeltur">
             <section class="tur">
-                <section class="vandre">
+                <div class="circle"></div>
+                <section class="vandre" onclick="bjergbanestienInfo()">
                     <h1>Bjergbanestien</h1>
                     <h2>10km - something something</h2>
                     <div class="landingpageImg">
@@ -75,7 +81,7 @@
                     <p>10km something something something something something </p>
                 </section>
             </section>
-            <nav class="landingpageNav">
+            <nav>
                 <ul>
                     <li onclick="showVandretur()">vandre</li>
                     <li class="activePage">cykel</li>
@@ -83,30 +89,253 @@
             </nav>
         </section>
     </div>
-    <div class="rute">
+    <div class="rute" id="mulbjerge">
         <section>
             <div>
                 <img src="assets/images/Mulbjerge-03.jpg" alt="Mulbjerge">
             </div>
-        </section>
-        <section class="ruteText">
-            <h1>Mulbjerge</h1>
-            <h4>10km something something</h4>
-            <section class="ruteGalleri">
-                <img class="img1" src="assets/images/Mulbjerge-01.jpg" alt="Mulbjerge">
-                <img class="img2" src="assets/images/Mulbjerge-02.jpg" alt="Mulbjerge">
-                <img class="img3" src="assets/images/Mulbjerge-04.jpg" alt="Mulbjerge">
-                <img class="img4" src="assets/images/Mulbjerge-05.jpg" alt="Mulbjerge">
+            <section class="ruteText">
+                <h1>Mulbjerge</h1>
+                <h4>10km fra din lokation</h4>
+                <p class="intro">
+                    Vidste du, at Mulbjerge engang var en ø langt ude i Kattegat?
+                    At området i dag byder på sjældne planter - og mange
+                    forskellige arter af fugle? At her solgtes sild til kongen?
+                    <br> <br>
+                    Følg den foreslåede tur rundt, få svarene og meget mere
+                    at vide. På turen er der fortællinger på hver af de 6 stop. Se
+                    ruten på kortet.
+                </p>
+                <section class="ruteGalleri1">
+                    <img class="img1" src="assets/images/Mulbjerge-01.jpg" alt="Mulbjerge">
+                    <img class="img2" src="assets/images/Mulbjerge-02.jpg" alt="Mulbjerge">
+                </section>
+                <p>
+                    Mulbjerge er en langstrakt morænebakke og en del af et større
+                    fredet naturområde bestående af kystforlandet mod Kattegat
+                    og ”bjergene”, i alt 146 ha. Under isens tilbagetrækning blev
+                    smeltevandssand og -grus skubbet op og dannede de massive
+                    bakker. Samtidig blev undergrundens kalk flere steder presset
+                    med.
+                </p>
+                <p>
+                    Arealerne med den kalkholdige jordbund fremstår i dag som
+                    unikke overdrev med noget af Danmarks mest artsrige planteog insektliv. 
+                    I alt er ca. 87 ha af fredningen vild natur. De resterende 59 ha er marker og plantage.
+                    Mulbjerge, Dokkedal og Stejlgabet er en del af et større fredet
+                    Natura 2000 område. Byen Dokkedal og slugten Stejlgabet er
+                    dog ikke fredet.
+                </p>
+                <section class="ruteGalleri2">
+                    <img class="img3" src="assets/images/Mulbjerge-04.jpg" alt="Mulbjerge">
+                    <img class="img4" src="assets/images/Mulbjerge-05.jpg" alt="Mulbjerge">
+                </section>
             </section>
-            <p>something something something something something something something </p>
         </section>
-        <nav class="ruteNav">
+        <nav>
             <ul>
                 <li class="activePage">info</li>
                 <li>kort</li>
             </ul>
         </nav>
     </div>
-    
+    <div class="rute" id="poulstrup">
+        <section>
+            <div>
+                <img src="assets/images/PoulstrupS›OgDallHede-01.jpg" alt="poulstrup">
+            </div>
+            <section class="ruteText">
+                <h1>Poulstrup Sø og Dall Hede</h1>
+                <h4>4km fra din lokation</h4>
+                <p class="intro">
+                    Beliggende blot 12 km syd for Aalborg er naturområdet omkring
+                    Poulstrup Sø et ideelt udflugtsmål. Området kan nås fra øst via
+                    Visse eller Nøvling. Kommer du fra vest køres via Poulstrup eller Ferslev.
+                </p>
+                <section class="ruteGalleri1">
+                    <img class="img1" src="assets/images/PoulstrupS›OgDallHede-09.jpg" alt="poulstrup">
+                    <img class="img2" src="assets/images/PoulstrupS›OgDallHede-02.jpg" alt="poulstrup">
+                </section>
+                <h3>Friluftsaktiviteter</h3>
+                <p>
+                    Park & Natur har markeret tre vandreruter i området. Herudover
+                    er der anlagt en markeret ridesti. Turene er afmærket med sorte pæle med farvecirkler for hver enkelt turrute, og ridestien er
+                    markeret med ridepiktogrammer.
+                    Der er gode opholdsmuligheder ved søerne, men det er tilladt
+                    at slå sig ned over alt i naturområdet. Ved færdsel i de indhegnede områder skal der udvises hensyn til de græssende dyr.
+                    Du må gerne samle svampe, bær og blomster til eget forbrug
+                </p>
+                <h3>Regler for færdsel til fods og på cykel</h3>
+                <p>
+                    De fleste mennesker besøger naturområdet for at opleve fred
+                    og ro. Benyt derfor venligst de anviste parkeringspladser og
+                    undgå unødig gennemkørsel.
+                    Det er tilladt at færdes til fods over alt på Aalborg Kommunes
+                    arealer (se områdegrænse på kortet). Cykling er kun tilladt på
+                    befæstede stier og skovveje.
+                    Al færdsel og ophold sker på eget ansvar og under størst mulig
+                    hensyntagen til andre naturgæster.
+                    Overnatning samt båltænding er ikke tilladt.
+                </p>
+                <p class="fedSkrift">
+                    Hunde skal altid føres i snor i naturen. Vær særlig opmærksom på at din hund ikke springer op og skræmmer naturgæster på hesteryg. I hundeskoven må hunde under kontrol løbe frit.
+                </p>
+                <section class="ruteGalleri2">
+                    <img class="img3" src="assets/images/PoulstrupS›OgDallHede-10.jpg" alt="poulstrup">
+                    <img class="img4" src="assets/images/PoulstrupS›OgDallHede-13.jpg" alt="poulstrup">
+                </section>
+            </section>
+        </section>
+        <nav>
+            <ul>
+                <li class="activePage">info</li>
+                <li>kort</li>
+            </ul>
+        </nav>
+    </div>
+    <div class="rute" id="egholm">
+        <section>
+            <div>
+                <img src="assets/images//Egholm-04.jpg" alt="egholm">
+            </div>
+            <section class="ruteText">
+                <h1>Egholm</h1>
+                <h4>12km fra din lokation</h4>
+                <p class="intro">
+                    
+                    <br> <br>
+                    
+                </p>
+                <section class="ruteGalleri1">
+                    <img class="img1" src="assets/images/Egholm-07.jpg" alt="egholm">
+                    <img class="img2" src="assets/images/Egholm-06.jpg" alt="egholm">
+                </section>
+                <p>
+                    
+                </p>
+                <p>
+                    
+                </p>
+                <section class="ruteGalleri2">
+                    <img class="img3" src="assets/images/Egholm-05.jpg" alt="egholm">
+                    <img class="img4" src="assets/images/Egholm-09.jpg" alt="egholm">
+                </section>
+            </section>
+        </section>
+        <nav>
+            <ul>
+                <li class="activePage">info</li>
+                <li>kort</li>
+            </ul>
+        </nav>
+    </div>
+    <div class="rute" id="oesteraadalenNord">
+        <section>
+            <div>
+                <img src="assets/images/Mulbjerge-03.jpg" alt="Østerådalen nord">
+            </div>
+            <section class="ruteText">
+                <h1>Østerådalen Nord</h1>
+                <h4>5km fra din lokation</h4>
+                <p class="intro">
+                    
+                    <br> <br>
+                    
+                </p>
+                <section class="ruteGalleri1">
+                    <img class="img1" src="assets/images/Mulbjerge-01.jpg" alt="Østerådalen nord">
+                    <img class="img2" src="assets/images/Mulbjerge-02.jpg" alt="Østerådalen nord">
+                </section>
+                <p>
+                    
+                </p>
+                <p>
+                    
+                </p>
+                <section class="ruteGalleri2">
+                    <img class="img3" src="assets/images/Mulbjerge-04.jpg" alt="Østerådalen nord">
+                    <img class="img4" src="assets/images/Mulbjerge-05.jpg" alt="Østerådalen nord">
+                </section>
+            </section>
+        </section>
+        <nav>
+            <ul>
+                <li class="activePage">info</li>
+                <li>kort</li>
+            </ul>
+        </nav>
+    </div>
+    <div class="rute" id="oesteraadalenSyd">
+        <section>
+            <div>
+                <img src="assets/images/Mulbjerge-03.jpg" alt="Østerådalen syd">
+            </div>
+            <section class="ruteText">
+                <h1>Østerådalen Syd</h1>
+                <h4>7km fra din lokation</h4>
+                <p class="intro">
+                    
+                    <br> <br>
+                    
+                </p>
+                <section class="ruteGalleri1">
+                    <img class="img1" src="assets/images/Mulbjerge-01.jpg" alt="Østerådalen syd">
+                    <img class="img2" src="assets/images/Mulbjerge-02.jpg" alt="Østerådalen syd">
+                </section>
+                <p>
+                    
+                </p>
+                <p>
+                    
+                </p>
+                <section class="ruteGalleri2">
+                    <img class="img3" src="assets/images/Mulbjerge-04.jpg" alt="Østerådalen syd">
+                    <img class="img4" src="assets/images/Mulbjerge-05.jpg" alt="Østerådalen syd">
+                </section>
+            </section>
+        </section>
+        <nav>
+            <ul>
+                <li class="activePage">info</li>
+                <li>kort</li>
+            </ul>
+        </nav>
+    </div>
+    <div class="rute" id="bjergbanestien">
+        <section>
+            <div>
+                <img src="assets/images/Mulbjerge-03.jpg" alt="bjergbanestien">
+            </div>
+            <section class="ruteText">
+                <h1>Poulstrup sø</h1>
+                <h4>4km fra din lokation</h4>
+                <p class="intro">
+                    
+                    <br> <br>
+                    
+                </p>
+                <section class="ruteGalleri1">
+                    <img class="img1" src="assets/images/Mulbjerge-01.jpg" alt="bjergbanestien">
+                    <img class="img2" src="assets/images/Mulbjerge-02.jpg" alt="bjergbanestien">
+                </section>
+                <p>
+                    
+                </p>
+                <p>
+                    
+                </p>
+                <section class="ruteGalleri2">
+                    <img class="img3" src="assets/images/Mulbjerge-04.jpg" alt="bjergbanestien">
+                    <img class="img4" src="assets/images/Mulbjerge-05.jpg" alt="bjergbanestien">
+                </section>
+            </section>
+        </section>
+        <nav>
+            <ul>
+                <li class="activePage">info</li>
+                <li>kort</li>
+            </ul>
+        </nav>
+    </div>
 </body>
 </html>
