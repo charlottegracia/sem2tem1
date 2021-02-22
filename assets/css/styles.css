@@ -176,12 +176,6 @@ nav li {
 .img1 {grid-area: img1};
 .img2 {grid-area: img2};
 .img3 {grid-area: img3};
-.img4 {grid-area: img4};
-.img5 {grid-area: img5};
-.img6 {grid-area: img6};
-.img7 {grid-area: img7};
-.img8 {grid-area: img8};
-.img9 {grid-area: img9};
 
 .ruteGalleri img {
     object-fit: cover;
@@ -189,50 +183,24 @@ nav li {
     width: 100%;
 }
 
+/* galleri til 1 billede */
 .ruteGalleri1 {
     display: grid;
     grid-gap: 10px;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1fr;
     grid-template-rows: 1fr;
     grid-template-areas: 
-    "img1 img2";
+    "img1";
 }
 
+/* galleri til 2 billeder */
 .ruteGalleri2 {
-    padding-bottom: 60px;
     display: grid;
     grid-gap: 10px;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr;
     grid-template-areas: 
-    "img3 img4";
-}
-
-.ruteGalleri3 {
-    display: grid;
-    grid-gap: 10px;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1fr;
-    grid-template-areas: 
-    "img5 img6";
-}
-
-.ruteGalleri4 {
-    display: grid;
-    grid-gap: 10px;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1fr;
-    grid-template-areas: 
-    "img7 img8";
-}
-
-.ruteGalleri4 {
-    display: grid;
-    grid-gap: 10px;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1fr;
-    grid-template-areas: 
-    "img9 img9";
+    "img2 img3";
 }
 
 #engelskStartside   {display: none;}
