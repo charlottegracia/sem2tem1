@@ -48,6 +48,22 @@ header i {
     border-radius: 8px;
 }
 
+.velkommen h1 {
+    font-size: 32px;
+    font-weight: normal;
+    padding: 20px 20px 0 20px;
+    width: 85%;
+}
+
+.velkommen h2 {
+    padding: 0 20px;
+    hyphens: auto;
+    width: 85%;
+    font-size: 19px;
+    line-height: 1.5;
+}
+
+
 .tur {
     margin: 20px;
     grid-gap: 20px;
@@ -103,6 +119,7 @@ nav {
     width: 100%;
     position: fixed;
     bottom: 0;
+    z-index: 2;
 }
 
 nav ul {
@@ -159,7 +176,6 @@ nav li {
 .img1 {grid-area: img1};
 .img2 {grid-area: img2};
 .img3 {grid-area: img3};
-.img4 {grid-area: img4};
 
 .ruteGalleri img {
     object-fit: cover;
@@ -167,23 +183,24 @@ nav li {
     width: 100%;
 }
 
+/* galleri til 1 billede */
 .ruteGalleri1 {
     display: grid;
     grid-gap: 10px;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1fr;
     grid-template-rows: 1fr;
     grid-template-areas: 
-    "img1 img2";
+    "img1";
 }
 
+/* galleri til 2 billeder */
 .ruteGalleri2 {
-    padding-bottom: 60px;
     display: grid;
     grid-gap: 10px;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr;
     grid-template-areas: 
-    "img3 img4";
+    "img2 img3";
 }
 
 #engelskStartside   {display: none;}
