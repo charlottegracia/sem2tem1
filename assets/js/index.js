@@ -9,8 +9,9 @@ function showVandretur() {
 }
 
 function showMap() {
-    document.getElementById('map').style.display = 'block';
     document.getElementById('mulbjerge').style.display = 'none';
+    document.getElementById('mulbjergeMap').style.display = 'block';
+    
     document.getElementById('poulstrup').style.display = 'none';
     document.getElementById('egholm').style.display = 'none';
     document.getElementById('oesteraadalenNord').style.display = 'none';
@@ -21,6 +22,7 @@ function showMap() {
 function mulbjergInfo() {
     removeTheStartside();
     document.getElementById('mulbjerge').style.display = 'block';
+    document.getElementById('mulbjergeMap').style.display = 'none';
     showPil();
 }
 
@@ -64,6 +66,7 @@ function skiftSprog() {
     removeVandreruter();
     document.getElementById('startside').style.display = 'none';
     document.getElementById('engelskStartside').style.display = 'block';
+    document.getElementById('pil').style.display = 'block';
 }
 
 function removeVandreruter() {
@@ -74,6 +77,7 @@ function removeVandreruter() {
     document.getElementById('oesteraadalenNord').style.display = 'none';
     document.getElementById('oesteraadalenSyd').style.display = 'none';
     document.getElementById('bjergbanestien').style.display = 'none';
+    document.getElementById('mulbjergeMap').style.display = 'none';
 }
 
 function showPil() {
