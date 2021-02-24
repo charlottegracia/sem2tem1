@@ -3,9 +3,19 @@ function showCykeltur() {
     document.getElementById('cykeltur').style.display = 'block';
 }
 
+function showCykelturEngelsk() {
+    document.getElementById('vandreturEngelsk').style.display = 'none';
+    document.getElementById('cykelturEngelsk').style.display = 'block';
+}
+
 function showVandretur() {
     document.getElementById('vandretur').style.display = 'block';
     document.getElementById('cykeltur').style.display = 'none';
+}
+
+function showVandreturEngelsk() {
+    document.getElementById('vandreturEngelsk').style.display = 'block';
+    document.getElementById('cykelturEngelsk').style.display = 'none';
 }
 
 function showMap() {
@@ -72,7 +82,9 @@ function skiftSprog() {
     removeVandreruter();
     document.getElementById('startside').style.display = 'none';
     document.getElementById('engelskStartside').style.display = 'block';
-    document.getElementById('pil').style.display = 'block';
+    document.getElementById('vandreturEngelsk').style.display = 'block';
+    document.getElementById('cykelturEngelsk').style.display = 'none';
+    showPil();
     scrollUp();
 }
 
