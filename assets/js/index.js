@@ -11,7 +11,6 @@ function showVandretur() {
 function showMap() {
     document.getElementById('mulbjerge').style.display = 'none';
     document.getElementById('mulbjergeMap').style.display = 'block';
-    
     document.getElementById('poulstrup').style.display = 'none';
     document.getElementById('egholm').style.display = 'none';
     document.getElementById('oesteraadalenNord').style.display = 'none';
@@ -24,42 +23,49 @@ function mulbjergInfo() {
     document.getElementById('mulbjerge').style.display = 'block';
     document.getElementById('mulbjergeMap').style.display = 'none';
     showPil();
+    scrollUp();
 }
 
 function poulstrupInfo() {
     removeTheStartside();
     document.getElementById('poulstrup').style.display = 'block';
     showPil();
+    scrollUp();
 }
 
 function egholmInfo() {
     removeTheStartside();
     document.getElementById('egholm').style.display = 'block';
     showPil();
+    scrollUp();
 }
 
 function oesteraadalenNordInfo() {
     removeTheStartside();
     document.getElementById('oesteraadalenNord').style.display = 'block';
     showPil();
+    scrollUp();
 }
 
 function oesteraadalenSydInfo() {
     removeTheStartside();
     document.getElementById('oesteraadalenSyd').style.display = 'block';
     showPil();
+    scrollUp();
 }
 
 function bjergbanestienInfo() {
     removeTheStartside();
     document.getElementById('bjergbanestien').style.display = 'block';
     showPil();
+    scrollUp();
 }
 
 function tilbageTilStartside() {
     removeVandreruter();
     document.getElementById('engelskStartside').style.display = 'none';
     document.getElementById('startside').style.display = 'block';
+    scrollUp();
 }
 
 function skiftSprog() {
@@ -67,6 +73,7 @@ function skiftSprog() {
     document.getElementById('startside').style.display = 'none';
     document.getElementById('engelskStartside').style.display = 'block';
     document.getElementById('pil').style.display = 'block';
+    scrollUp();
 }
 
 function removeVandreruter() {
@@ -87,4 +94,8 @@ function showPil() {
 function removeTheStartside() {
     document.getElementById('startside').style.display = 'none';
     document.getElementById('engelskStartside').style.display = 'none';
+}
+
+function scrollUp() {
+    document.documentElement.scrollTop = 0;
 }
