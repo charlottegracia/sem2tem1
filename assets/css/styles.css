@@ -206,9 +206,13 @@ nav li {
     "img2 img3";
 }
 
+.kortikoner {
+    width: 90vw;
+}
+
 .kort {
-    width: 100%;
-    height: 500px;
+    width: 100vw;
+    height: auto;
 }
 
 #engelskStartside   {display: none;}
