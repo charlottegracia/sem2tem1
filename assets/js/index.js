@@ -9,61 +9,54 @@ function showVandretur() {
 }
 
 function mulbjergInfo() {
-    document.getElementById('startside').style.display = 'none';
-    document.getElementById('engelskStartside').style.display = 'none';
+    removeTheStartside();
     document.getElementById('mulbjerge').style.display = 'block';
-    document.getElementById('pil').style.display = 'block';
+    showPil();
 }
 
 function poulstrupInfo() {
-    document.getElementById('startside').style.display = 'none';
-    document.getElementById('engelskStartside').style.display = 'none';
+    removeTheStartside();
     document.getElementById('poulstrup').style.display = 'block';
-    document.getElementById('pil').style.display = 'block';
+    showPil();
 }
 
 function egholmInfo() {
-    document.getElementById('startside').style.display = 'none';
-    document.getElementById('engelskStartside').style.display = 'none';
+    removeTheStartside();
     document.getElementById('egholm').style.display = 'block';
-    document.getElementById('pil').style.display = 'block';
+    showPil();
 }
 
 function oesteraadalenNordInfo() {
-    document.getElementById('startside').style.display = 'none';
-    document.getElementById('engelskStartside').style.display = 'none';
+    removeTheStartside();
     document.getElementById('oesteraadalenNord').style.display = 'block';
-    document.getElementById('pil').style.display = 'block';
+    showPil();
 }
 
 function oesteraadalenSydInfo() {
-    document.getElementById('startside').style.display = 'none';
-    document.getElementById('engelskStartside').style.display = 'none';
+    removeTheStartside();
     document.getElementById('oesteraadalenSyd').style.display = 'block';
-    document.getElementById('pil').style.display = 'block';
+    showPil();
 }
 
 function bjergbanestienInfo() {
-    document.getElementById('startside').style.display = 'none';
-    document.getElementById('engelskStartside').style.display = 'none';
+    removeTheStartside();
     document.getElementById('bjergbanestien').style.display = 'block';
-    document.getElementById('pil').style.display = 'block';
+    showPil();
 }
 
 function tilbageTilStartside() {
-    document.getElementById('pil').style.display = 'none';
-    document.getElementById('mulbjerge').style.display = 'none';
-    document.getElementById('poulstrup').style.display = 'none';
-    document.getElementById('egholm').style.display = 'none';
-    document.getElementById('oesteraadalenNord').style.display = 'none';
-    document.getElementById('oesteraadalenSyd').style.display = 'none';
-    document.getElementById('bjergbanestien').style.display = 'none';
+    removeVandreruter();
     document.getElementById('engelskStartside').style.display = 'none';
     document.getElementById('startside').style.display = 'block';
 }
 
 function skiftSprog() {
+    removeVandreruter();
     document.getElementById('startside').style.display = 'none';
+    document.getElementById('engelskStartside').style.display = 'block';
+}
+
+function removeVandreruter() {
     document.getElementById('pil').style.display = 'none';
     document.getElementById('mulbjerge').style.display = 'none';
     document.getElementById('poulstrup').style.display = 'none';
@@ -71,6 +64,13 @@ function skiftSprog() {
     document.getElementById('oesteraadalenNord').style.display = 'none';
     document.getElementById('oesteraadalenSyd').style.display = 'none';
     document.getElementById('bjergbanestien').style.display = 'none';
+}
+
+function showPil() {
+    document.getElementById('pil').style.display = 'block';
+}
+
+function removeTheStartside() {
+    document.getElementById('startside').style.display = 'none';
     document.getElementById('engelskStartside').style.display = 'none';
-    document.getElementById('engelskStartside').style.display = 'block';
 }
