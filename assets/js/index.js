@@ -8,6 +8,16 @@ function showVandretur() {
     document.getElementById('cykeltur').style.display = 'none';
 }
 
+function showMap() {
+    document.getElementById('map').style.display = 'block';
+    document.getElementById('mulbjerge').style.display = 'none';
+    document.getElementById('poulstrup').style.display = 'none';
+    document.getElementById('egholm').style.display = 'none';
+    document.getElementById('oesteraadalenNord').style.display = 'none';
+    document.getElementById('oesteraadalenSyd').style.display = 'none';
+    document.getElementById('bjergbanestien').style.display = 'none';
+}
+
 function mulbjergInfo() {
     removeTheStartside();
     document.getElementById('mulbjerge').style.display = 'block';
